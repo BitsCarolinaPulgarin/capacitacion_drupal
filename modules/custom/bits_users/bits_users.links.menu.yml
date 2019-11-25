@@ -1,0 +1,5 @@
+bits_users.link:
+  title: "BITS Users"
+  description: 'Módulo de capacitación bits users'
+  parent: system.admin_structure
+  route_name: bits_users.routing

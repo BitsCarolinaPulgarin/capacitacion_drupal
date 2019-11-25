@@ -1,0 +1,5 @@
+bits_database.link:
+  title: "BITS Database"
+  description: 'Módulo de capacitación Bits Database'
+  parent: system.admin_structure
+  route_name: bits_database.routing

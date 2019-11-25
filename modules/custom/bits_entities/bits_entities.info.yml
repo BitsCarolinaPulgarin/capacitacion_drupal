@@ -1,0 +1,4 @@
+name: "Bits entities"
+description: "Modulo capacitación Drupal Bits entities"
+core: 8.x
+type: module

@@ -1,0 +1,7 @@
+bits_entities.routing:
+  path: '/bits_database'
+  defaults:
+    _title: 'BITS Database'
+    _controller: '\Drupal\bits_entities\Controller\bitsentities::test'
+  requirements:
+    _permission: "access administration pages"

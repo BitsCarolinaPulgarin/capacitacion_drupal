@@ -1,0 +1,20 @@
+<?php
+/*
+function bits_entities_entity_info() {
+  $return = array(
+    'bits_entities' => array(
+      'label' => t('La entidad'),
+      'controller class' => 'EntityAPIController',
+      'base table' => 'bits_entities_example',
+      'entity keys' => array('id' => 'entityID'),
+    ),
+
+  );
+  return $return;
+}*/
+
+function bits_entities_entity_display_build_alter(&$build, $context) {
+
+	\Drupal::logger('carolina')->debug(print_r(array_keys($context), true));
+
+}

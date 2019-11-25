@@ -1,0 +1,81 @@
+<?php
+
+
+function bits_database_schema() {
+
+$schema['bits_database_example'] = array(
+        'description' => 'The table for storing the products data.',
+        'fields' => array(
+            'id' => array(
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'title' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'uid' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'status' => array(
+                'type' => 'int',
+                'size' => 'tiny',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+           	'type' => array(
+                'type' => 'varchar',
+                'length' => 64,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'ip' => array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'timestamp' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+
+    $schema['bits_database_counter'] = array(
+        'description' => 'The table for storing the products data.',
+        'fields' => array(
+            'route' => array(
+                'type' => 'varchar',
+                'length' => 150,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'uid' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'user_count' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'lastcount' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+        ),
+        'primary key' => array('route'),
+        'primary key' => array('uid'),
+    );
+return $schema;
+}

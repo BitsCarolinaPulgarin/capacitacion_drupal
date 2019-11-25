@@ -1,0 +1,5 @@
+bits_entities.link:
+  title: "BITS Entities"
+  description: 'Módulo de capacitación Bits entities'
+  parent: system.admin_structure
+  route_name: bits_entities.routing

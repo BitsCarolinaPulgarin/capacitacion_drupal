@@ -1,0 +1,53 @@
+<?php
+
+
+function bits_pages_schema() {
+
+$schema['bits_pages'] = array(
+        'description' => 'The table for storing the products data.',
+        'fields' => array(
+            'id' => array(
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'title' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'uid' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+            ),
+            'username' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+           	'email' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'ip' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'timestamp' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

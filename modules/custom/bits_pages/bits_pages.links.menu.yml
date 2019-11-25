@@ -1,0 +1,5 @@
+bits_pages.link:
+  title: "BITS Pages"
+  description: 'Módulo de capacitación'
+  parent: system.admin_structure
+  route_name: bits_pages.routing

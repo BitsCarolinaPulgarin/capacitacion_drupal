@@ -1,0 +1,7 @@
+bits_database.routing:
+  path: '/bits_database'
+  defaults:
+    _title: 'BITS Database'
+    _controller: '\Drupal\bits_database\Controller\BitsdatabaseCtr::test'
+  requirements:
+    _permission: "access administration pages"

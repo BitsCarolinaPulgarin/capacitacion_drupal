@@ -1,0 +1,15 @@
+bits_pages.routing:
+  path: '/admin/structure/bits_pages'
+  defaults:
+    _title: 'BITS Pages'
+    _form: '\Drupal\bits_pages\Form\Formulario'
+  requirements:
+    _permission: "access administration pages"
+
+bits_pages.form:
+  path: '/admin/config/crear-formulario'
+  defaults:
+    _form: '\Drupal\bits_pages\Form\Formulario'
+    _title: 'Modulo de pruebas - Crear nuevo formulario'
+  requirements:
+    _permission: 'access content'
